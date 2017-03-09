@@ -1,0 +1,123 @@
+name = 'GSA Interact'
+description = Uses the Bootstrap Framework Sass source files and must be compiled (not for beginners).
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; GSA Interact bs4 theme aassets
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = gsa/css/bootstrap.css
+stylesheets[all][] = gsa/css/bootstrap-extend.css
+stylesheets[all][] = gsa/css/site.css
+
+stylesheets[all][] = gsa/vendor/animsition/animsition.css
+stylesheets[all][] = gsa/vendor/asscrollable/asscrollable.css
+stylesheets[all][] = gsa/vendor/switchery/switchery.css
+stylesheets[all][] = gsa/vendor/intro-js/introjs.css
+stylesheets[all][] = gsa/vendor/slidepanel/slidepanel.css
+stylesheets[all][] = gsa/vendor/jquery-mmenu/jquery-mmenu.css
+stylesheets[all][] = gsa/vendor/flag-icon-css/flag-icon.css
+stylesheets[all][] = gsa/vendor/waves/waves.css
+stylesheets[all][] = gsa/vendor/jquery-mmenu/jquery-mmenu.css
+stylesheets[all][] = gsa/vendor/plyr/plyr.min.css?v2.2.0.css
+stylesheets[all][] = gsa/vendor/chartist/chartist.css
+stylesheets[all][] = gsa/vendor/jvectormap/jquery-jvectormap.css
+stylesheets[all][] = gsa/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css
+
+
+stylesheets[all][] = gsa/fonts/material-design/material-design.css
+stylesheets[all][] = gsa/fonts/brand-icons/brand-icons.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; CORE
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = gsa/vendor/babel-external-helpers/babel-external-helpers.js
+scripts[] = gsa/vendor/jquery/jquery.js
+scripts[] = gsa/vendor/tether/tether.js
+scripts[] = gsa/vendor/bootstrap/bootstrap.js
+scripts[] = gsa/vendor/animsition/animsition.js
+scripts[] = gsa/vendor/mousewheel/jquery.mousewheel.js
+scripts[] = gsa/vendor/asscrollbar/jquery-asScrollbar.js
+scripts[] = gsa/vendor/asscrollable/jquery-asScrollable.js
+scripts[] = gsa/vendor/waves/waves.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; PLUGINS
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = gsa/vendor/jquery-mmenu/jquery.mmenu.min.all.js
+scripts[] = gsa/vendor/switchery/switchery.min.js
+scripts[] = gsa/vendor/intro-js/intro.js
+scripts[] = gsa/vendor/screenfull/screenfull.js
+scripts[] = gsa/vendor/slidepanel/jquery-slidePanel.js
+scripts[] = gsa/vendor/plyr/plyr.js
+scripts[] = gsa/vendor/chartist/chartist.min.js
+scripts[] = gsa/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min.js
+scripts[] = gsa/vendor/jvectormap/jquery-jvectormap.min.js
+scripts[] = gsa/vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js
+scripts[] = gsa/vendor/matchheight/jquery.matchHeight-min.js
+scripts[] = gsa/vendor/peity/jquery.peity.min.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = gsa/js/State.js
+scripts[] = gsa/js/Component.js
+scripts[] = gsa/js/Plugin.js
+scripts[] = gsa/js/Base.js
+scripts[] = gsa/js/Config.js
+scripts[] = gsa/js/Section/Menubar.js
+scripts[] = gsa/js/Section/Sidebar.js
+scripts[] = gsa/js/Section/PageAside.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; CONFIG
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = gsa/js/config/colors.js
+scripts[] = gsa/js/config/tour.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; PAGE
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = gsa/js/Site.js
+scripts[] = gsa/js/Plugin/asscrollable.js
+scripts[] = gsa/js/Plugin/slidepanel.js
+scripts[] = gsa/js/Plugin/switchery.js
+scripts[] = gsa/js/Plugin/matchheight.js
+scripts[] = gsa/js/Plugin/jvectormap.js
+scripts[] = gsa/js/Plugin/peity.js
+scripts[] = gsa/examples/js/dashboard/v1.js
+scripts[] = gsa/js/Plugin/plyr.min.js
+
+
+
+
+
+
+; Disable the CDN provider so compiled source files can be used.
+settings[bootstrap_cdn] = ''
